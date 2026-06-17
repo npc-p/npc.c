@@ -1,0 +1,199 @@
+.panel {
+  max-width: 900px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.overviewCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+}
+
+.overviewCard .label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.overviewCard .value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.overviewCard .sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.accent {
+  color: var(--color-primary) !important;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Category breakdown */
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.categoryItem {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.categoryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.categoryName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.categoryAmount {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.barTrack {
+  height: 8px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.barLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* Member stats table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background: var(--color-bg);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table td {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.positive {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.negative {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.rankBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+
+.rankTop {
+  background: var(--color-warning-light);
+  color: #92400e;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 640px) {
+  .table {
+    font-size: 12px;
+  }
+  .table th,
+  .table td {
+    padding: 8px 10px;
+  }
+}

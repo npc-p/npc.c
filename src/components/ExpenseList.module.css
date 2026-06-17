@@ -1,0 +1,58 @@
+.container {
+  max-width: 900px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.addBtn:hover {
+  background: var(--color-primary-hover);
+}
+
+.summary {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
